@@ -27,6 +27,7 @@ dev = [
   'beartype',
   'marimo',
   'pre-commit',
+  'modal>=1.6.3',
 ]
 
 [build-system]
@@ -82,4 +83,4 @@ addopts = '--jaxtyping-packages=tiny_trace_tfm,beartype.beartype'
 
 [tool.basedpyright]
 typeCheckingMode = 'standard'
-include = ['src', 'tests', 'train.py', 'predict.py', 'analyze.py']
+include = ['src', 'tests', 'train.py', 'predict.py', 'analyze.py', 'cloud.py']
