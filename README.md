@@ -74,6 +74,7 @@ Needs [uv](https://docs.astral.sh/uv/) and [just](https://just.systems/). Everyt
 just setup              # uv sync, then install the pre-commit hooks
 just quick              # CPU smoke test, under 5 minutes
 just train              # full run; flags pass through, e.g. --run-name wd1.0-seed0
+just bg train ...       # the same, in a detached tmux session; any recipe works
 just analyze <run>      # baselines, probes, interventions and plots
 just cloud <sweep>      # the same runs on Modal, one GPU each; see .agents/instructions/cloud.md
 just test               # pytest

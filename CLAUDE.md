@@ -123,6 +123,12 @@ remove an item that is done.
   the mazes and traces once. Run variants A–C as one parallel stage and D after A, on an A100 or
   H100, with checkpoints and resume, since a run may last hours.
 
+## Local Runs
+
+- Start every local training run, sweep or long analysis in tmux with `just bg <recipe> [args]`,
+  for example `just bg train --run-name wd1.0-seed0`. `tmux ls` lists the sessions and
+  `tmux attach -t <session>` watches one; each session's output is also in `runs/logs/`.
+
 ## Project Overview
 
 tiny-trace-tfm is project 8 of 18 in the Latent Space Project: small ML repos that test whether
