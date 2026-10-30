@@ -1,12 +1,8 @@
 # tiny-trace-tfm
 
-**Flagship: an internal model of maze search.** Does a small transformer trained on DFS maze-search traces build, and use, an internal model of search?
+**An internal model of maze search.** Does a small transformer trained on DFS maze-search traces build, and use, an internal model of search?
 
-Part of the **Latent Space Project**: 18 small PyTorch repos that test one idea, that neural networks encode concepts and strategy in their latent space, and that we can read and edit those representations. Everything trains on a single consumer GPU or a laptop.
-
-| Roadmap | Phase | Depends on | Status |
-| --- | --- | --- | --- |
-| 8 of 18 | 3. Flagship | tiny-transformer; probe and intervention code from blindfold-tfm | Not started (scaffolded) |
+**Status:** not started.
 
 The question is whether a small transformer trained on maze search traces builds an internal model of search (visited cells, open forks, a DFS-like stack) and actually uses it. Beating DFS is not the goal; DFS is the teacher.
 
@@ -53,7 +49,7 @@ Does a small transformer trained on maze search traces build an internal model o
 - At least two probed concepts beat their controls by a wide margin.
 - At least one intervention changes behavior in the predicted direction.
 
-Plus the definition of done every Latent Space Project repo shares:
+Plus the general checklist:
 
 Apply this checklist with the project-specific requirements and exceptions in
 [CLAUDE.md](CLAUDE.md#project-specific-scope).
